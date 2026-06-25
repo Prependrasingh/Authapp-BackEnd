@@ -27,11 +27,11 @@ auth-app/
 ├── models/
 │   └── userSchema.js        # User schema
 ├── controllers/
-│   └── authController.js   # Register / Login logic
+│   └── authr.js   # Register / Login logic
 ├── middleware/
 │   └── Auth.js             # JWT verification middleware
 ├── routes/
-│   └── auth.js              # Auth routes
+│   └── user.js              # Auth routes
 ├── .env                     # Environment variables (not committed)
 ├── .gitignore
 ├── package.json
