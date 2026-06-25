@@ -25,11 +25,11 @@ auth-app/
 ├── config/
 │   └── database.js        # MongoDB connection
 ├── models/
-│   └── userModel.js        # User schema
+│   └── userSchema.js        # User schema
 ├── controllers/
 │   └── authController.js   # Register / Login logic
 ├── middleware/
-│   └── auth.js             # JWT verification middleware
+│   └── Auth.js             # JWT verification middleware
 ├── routes/
 │   └── auth.js              # Auth routes
 ├── .env                     # Environment variables (not committed)
@@ -82,12 +82,12 @@ Base URL: `/api/v1/auth`
 
 | Method | Endpoint    | Description         | Auth Required |
 |--------|-------------|----------------------|----------------|
-| POST   | `/register` | Create a new account | No             |
+| POST   | `/signup` | Create a new account | No             |
 | POST   | `/login`    | Log in a user         | No             |
 
 ### Register
 
-**POST** `/api/v1/auth/register`
+**POST** `/api/v1/auth/signup`
 
 ```json
 {
